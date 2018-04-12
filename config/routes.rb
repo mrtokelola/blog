@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index' => 'welcome#index'
+  
+  get '/articles/new' => 'articles#new'
+  
   get '/articles/:id' => 'articles#show'
+
 
   resources :articles
 
